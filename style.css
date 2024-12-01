@@ -1,0 +1,154 @@
+/* Content Container Styling */
+.content-container {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #ff6600 !important; /* Orange navbar */
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.6) !important; /* White with lower opacity */
+  transition: color 0.3s;
+}
+
+.nav-link.active {
+  color: #ffffff !important; /* Solid white for active link */
+  background-color: transparent !important; /* No background */
+}
+
+.nav-link:hover {
+  color: #ffffff !important; /* Solid white on hover */
+}
+
+/* Content Layout Styling */
+.container {
+  padding: 20px;
+}
+
+/* Flexbox layout for equal height columns */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Left-side box with orange background */
+.left-container {
+  background-color: #ff6600; /* Orange background */
+  border-radius: 8px;
+  padding: 20px;
+  color: white; /* White text for contrast */
+  height: 100%; /* Keep it fixed to its natural height */
+}
+
+.left-container .form-control {
+  border: 2px solid white; /* White border for inputs */
+  border-radius: 8px;
+  background-color: transparent; /* Transparent input background */
+  color: white; /* White text */
+}
+
+.left-container .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+}
+
+.left-container .btn-primary {
+  background-color: white; /* White button */
+  color: #ff6600; /* Orange text */
+  border: none; /* Remove button border */
+}
+
+.left-container .btn-primary:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slightly different white on hover */
+}
+
+/* Summary container with transparent background and orange outline */
+.summary-container {
+  border: 2px solid #ff6600; /* Orange outline */
+  border-radius: 8px;
+  padding: 20px;
+}
+.summary-text {
+  background-color: transparent; /* Transparent background */
+  color: #333; /* Dark text */
+  flex-grow: 1; /* Allow text area to expand if more text is added */
+  max-height: 700px;
+  height: 700px;
+  overflow-y: auto; /* Allow vertical scrolling if the content overflows */
+}
+/* Title Styling */
+.summary-title {
+  background-color: #ff6600; /* Orange background for title */
+  color: white; /* White text */
+  padding: 10px;
+  border-radius: 8px;
+  position: sticky; /* Sticky position */
+  top: 0; /* Stick to the top */
+  z-index: 1; /* Make sure title stays on top of the content */
+}
+
+/* Flexbox layout for equal height columns */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Box Styling (For both left and right) */
+.box-container {
+  background-color: transparent; /* No background */
+  border-radius: 8px;
+  padding: 20px;
+  color: #333; /* Dark text for readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Keep the height equal */
+}
+
+.box-title {
+  background-color: #ff6600; /* Orange background for title */
+  color: white; /* White text for title */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.box-text {
+  border: 2px solid #ff6600; /* Orange border */
+  border-radius: 8px;
+  padding: 15px;
+  background-color: transparent; /* Transparent background */
+  color: #333; /* Dark text */
+  flex-grow: 1; /* Allow text area to expand if more text is added */
+  max-height: 720px;
+  height: 720px;
+}
+
+/* Adjustments for Flexbox in both boxes */
+.row {
+  gap: 20px; /* Space between the two boxes */
+}
+
+/* Optional: If you want the text to grow inside the boxes */
+.box-text {
+  overflow-y: auto; /* Allow vertical scrolling if the content overflows */
+}
+
+.centered-btn {
+  align-self: center; /* Center the button horizontally */
+  background-color: #ff6600 !important; /* Orange background */
+  color: white !important; /* White text */
+  padding: 10px 20px; /* Padding for the button */
+  border-radius: 8px; /* Rounded corners */
+  border: none; /* Remove border */
+  cursor: pointer; /* Pointer cursor on hover */
+}
