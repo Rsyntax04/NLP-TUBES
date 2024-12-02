@@ -152,3 +152,19 @@
   border: none; /* Remove border */
   cursor: pointer; /* Pointer cursor on hover */
 }
+
+.tall-textarea {
+  height: 750px;
+  overflow-y: auto;
+  resize: none;
+  padding: 10px;
+  line-height: 1.5;
+  border: 3px solid #ff6600 !important; /* Custom border color and thickness */
+  border-radius: 8px; /* Rounded corners */
+}
+
+.tall-textarea:focus {
+  outline: none;
+  border-color: #ff6600; /* Darker blue on focus */
+  box-shadow: none !important;
+}
